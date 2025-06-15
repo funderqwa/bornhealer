@@ -98,7 +98,7 @@ section:not(.hero):not(.page-hero) { padding-top: 50px; }
 
 /* --- Hero Section --- */
 .hero {
-    background: linear-gradient(to top, rgba(86, 10, 119, 0.7), rgba(40, 2, 57, 0.4)), url('https://bornhealer.co.za/wp-content/uploads/2021/03/File_000-scaled-e1615285825425-768x1024.jpeg') no-repeat center center/cover;
+    background: linear-gradient(to top, rgba(86, 10, 119, 0.7), rgba(40, 2, 57, 0.4)), url('./HealingTouchHero.png') no-repeat center center/cover;
     min-height: 80vh; display: flex; align-items: center; text-align: center; padding: 40px 0; color: #fff;
 }
 .hero h1, .hero p, .hero h2 { color: #fff; text-shadow: 1px 1px 4px rgba(0,0,0,0.6); }

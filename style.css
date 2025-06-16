@@ -117,8 +117,9 @@ section:not(.hero):not(.page-hero) { padding-top: 50px; }
 .specializations-section {
     background: var(--primary-color) ;
     color: #fff; text-align: center;
+
 }
-.specializations-section h2 { color: #fff; font-family: var(--body-font); font-size: 1.3rem; line-height: 1.6; max-width: 900px; margin: 0 auto; }
+.specializations-section h2 { color: #fff; font-family: var(--body-font); font-size: 1.7rem; line-height: 1.6; max-width: 900px; margin: 0 auto; font-weight: 900;}
 
 .about-section { background: var(--pastel-brown); }
 .about-grid { display: grid; grid-template-columns: 1fr 1.8fr; gap: 50px; align-items: center; } 
@@ -342,4 +343,59 @@ section:not(.hero):not(.page-hero) { padding-top: 50px; }
     grid-template-columns: repeat(2, 1fr); /* Two columns on mobile */
     gap: 10px;
 }
+}
+/* --- Styles for Healing Method Details --- */
+.service-detail-text .method-section {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--secondary-color);
+}
+
+.service-detail-text .method-section h5 {
+    font-family: var(--body-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.service-detail-text .method-section ul {
+    list-style: none;
+    padding-left: 1rem;
+    margin: 1rem 0;
+}
+
+.service-detail-text .method-section li {
+    padding-left: 1.8rem;
+    position: relative;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.service-detail-text .method-section li::before {
+    content: '\f00d'; /* Font Awesome 'x' (times) icon */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: #c75249; /* Red color from contact box */
+}
+
+/* Specific icon for the exorcism feedback points */
+#spirit-release-detail .method-section:last-of-type li::before {
+    content: '\f0a9'; /* Font Awesome 'hand-point-right' icon */
+    color: var(--primary-color);
+}
+
+
+.service-detail-text strong {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+    letter-spacing: 1px;
+    color: #c75249;
 }

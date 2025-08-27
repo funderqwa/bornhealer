@@ -25,6 +25,15 @@
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://bornhealer.co.za/" />
+    <!-- Hreflang & Locale -->
+    <link rel="alternate" hreflang="en-za" href="https://bornhealer.co.za/" />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://bornhealer.co.za/"
+    />
+    <meta property="og:locale" content="en_ZA" />
+    <meta name="theme-color" content="#2b1a3a" />
 
     <!-- Robots Tag -->
     <meta name="robots" content="index, follow" />
@@ -144,6 +153,59 @@
         ]
       }
     </script>
+
+    <!-- WebSite + Sitelinks Search -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Born Healer",
+        "url": "https://bornhealer.co.za/",
+        "inLanguage": "en-ZA"
+      }
+    </script>
+
+    <!-- FAQPage Structured Data (must mirror visible FAQ below) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you offer remote or telephonic healing sessions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Rosemarie offers remote, telephonic and in‑person sessions. Remote and phone sessions are effective when clients cannot travel."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where are in‑person sessions conducted?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In‑person sessions are available in Gauteng, South Africa. Exact location and directions are shared upon booking."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What issues can spiritual healing help with?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Support may include relief from anxiety, depression, chronic fatigue, pain, and assistance with spirit release and home/office cleansing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I book an appointment?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the contact form, email rosemarie@bornhealer.co.za, or call +27 (0)82 330‑9712 to request a booking."
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <header class="main-header" id="header">
@@ -231,6 +293,7 @@
             <img
               src="./img/RosemarieMary.jpeg"
               alt="Rosemarie Schmidtke, a psychic medium and spiritual healer based in Midrand, Gauteng."
+              loading="lazy"
             />
           </div>
           <div class="about-text">
@@ -312,6 +375,7 @@
               <img
                 src="./img/news-paper-1.jpg"
                 alt="Newspaper article about Rosemarie Schmidtke"
+                loading="lazy"
               />
               <div class="media-overlay">Newspaper Feature</div>
             </a>
@@ -319,6 +383,7 @@
               <img
                 src="./img/People-Mag.jpg"
                 alt="People Magazine feature on Born Healer"
+                loading="lazy"
               />
               <div class="media-overlay">People Magazine</div>
             </a>
@@ -326,6 +391,7 @@
               <img
                 src="./img/702-Talk.jpg"
                 alt="Rosemarie Schmidtke on 702 Talk Radio"
+                loading="lazy"
               />
               <div class="media-overlay">Talk Radio 702</div>
             </a>
@@ -464,6 +530,7 @@
             <img
               src="./img/RosemarieHoldingChild.png"
               alt="A young girl who was healed by Rosemarie Schmidtke."
+              loading="lazy"
             />
             <figcaption>
               For 2 years this little girl was not able to take a single step.
@@ -495,6 +562,7 @@
             <img
               src="./img/RosemarieTarotCard.jpeg"
               alt="A serene setting for a psychic reading."
+              loading="lazy"
             />
           </div>
         </div>
@@ -568,6 +636,7 @@
             <img
               src="./img/RosemarieHealing.jpeg"
               alt="An image representing the concept of spirit release."
+              loading="lazy"
             />
           </div>
         </div>
@@ -591,6 +660,7 @@
             <img
               src="./img/office cleansing.jpg"
               alt="A home that has been spiritually cleansed."
+              loading="lazy"
             />
           </div>
         </div>
@@ -674,6 +744,58 @@
         </div>
       </section>
 
+      <section id="faq" class="faq-section has-curvy-divider">
+        <div class="container">
+          <h2>Frequently Asked Questions</h2>
+          <details>
+            <summary>
+              Do you offer remote or telephonic healing sessions?
+            </summary>
+            <p>
+              Yes. Remote and telephonic sessions are available when clients
+              cannot travel. In‑person sessions are also offered.
+            </p>
+          </details>
+          <details>
+            <summary>Where are in‑person sessions conducted?</summary>
+            <p>
+              In‑person sessions take place in Gauteng, South Africa. Exact
+              directions are shared upon booking.
+            </p>
+          </details>
+          <details>
+            <summary>What issues can spiritual healing help with?</summary>
+            <p>
+              Clients often seek support for anxiety, depression, chronic
+              fatigue, persistent pain, spirit release, and home/office
+              cleansing.
+            </p>
+          </details>
+          <details>
+            <summary>How do I book an appointment?</summary>
+            <p>
+              Use the contact form below, email
+              <a href="mailto:rosemarie@bornhealer.co.za"
+                >rosemarie@bornhealer.co.za</a
+              >, or call <a href="tel:+27823309712">+27 (0)82 330‑9712</a>.
+            </p>
+          </details>
+        </div>
+        <div class="curvy-divider">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+      </section>
+
       <section id="instagram-section" class="instagram-section">
         <div class="container">
           <h2>
@@ -691,7 +813,11 @@
               target="_blank"
               class="instagram-post"
             >
-              <img src="./img/Frame 4.png" alt="Instagram post preview" />
+              <img
+                src="./img/Frame 4.png"
+                alt="Instagram post preview"
+                loading="lazy"
+              />
               <div class="instagram-overlay">
                 <i class="fab fa-instagram"></i>
               </div>
@@ -701,7 +827,11 @@
               target="_blank"
               class="instagram-post"
             >
-              <img src="./img/Frame 5.png" alt="Instagram post preview" />
+              <img
+                src="./img/Frame 5.png"
+                alt="Instagram post preview"
+                loading="lazy"
+              />
               <div class="instagram-overlay">
                 <i class="fab fa-instagram"></i>
               </div>
@@ -711,7 +841,11 @@
               target="_blank"
               class="instagram-post"
             >
-              <img src="./img/Frame 6.png" alt="Instagram post preview" />
+              <img
+                src="./img/Frame 6.png"
+                alt="Instagram post preview"
+                loading="lazy"
+              />
               <div class="instagram-overlay">
                 <i class="fab fa-instagram"></i>
               </div>
@@ -721,7 +855,11 @@
               target="_blank"
               class="instagram-post"
             >
-              <img src="./img/Frame 7.png" alt="Instagram post preview" />
+              <img
+                src="./img/Frame 7.png"
+                alt="Instagram post preview"
+                loading="lazy"
+              />
               <div class="instagram-overlay">
                 <i class="fab fa-instagram"></i>
               </div>
@@ -823,6 +961,31 @@
 
     <footer class="main-footer">
       <div class="container">
+        <address
+          itemscope
+          itemtype="https://schema.org/LocalBusiness"
+          style="margin-bottom: 10px"
+        >
+          <span itemprop="name">Born Healer</span>
+          <div
+            itemprop="address"
+            itemscope
+            itemtype="https://schema.org/PostalAddress"
+          >
+            <meta itemprop="addressCountry" content="ZA" />
+            <span itemprop="addressRegion">Gauteng</span>,
+            <span itemprop="addressLocality">Johannesburg</span>
+          </div>
+          <div>
+            <a href="tel:+27823309712" itemprop="telephone"
+              >+27 (0)82 330‑9712</a
+            >
+            ·
+            <a href="mailto:rosemarie@bornhealer.co.za" itemprop="email"
+              >rosemarie@bornhealer.co.za</a
+            >
+          </div>
+        </address>
         <p>
           Copyright &copy; <span id="year"></span> Rosemarie Schmidtke - Born
           Healer. All Rights Reserved.

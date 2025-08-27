@@ -460,3 +460,24 @@ section:not(.hero):not(.page-hero) { padding-top: 100px; }
     color: #c75249;
     font-weight: 900;
 }
+
+
+      /* Compact contact strip (phone + email with small icons) */
+      .contact-mini { 
+        color: #eae6f4; 
+        font: 600 0.95rem/1.2 Montserrat, system-ui; 
+        padding: 50px 0; 
+      }
+      .contact-mini .container { 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        gap: 22px; 
+        flex-wrap: wrap; 
+      }
+      .contact-mini a { color: #eae6f4; text-decoration: none; }
+      .contact-mini a:hover { text-decoration: underline; }
+      .contact-mini i { font-size: 0.95rem; margin-right: 8px; color: #ffffff; }
+      @media (max-width: 520px){
+        .contact-mini { font-size: 0.9rem; }
+      }
